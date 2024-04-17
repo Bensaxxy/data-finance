@@ -29,7 +29,7 @@ const Hero = () => {
             loop
           />
         </div>
-        <p className=" md:text-xl text-xl mt-3 text-gray-500">
+        <p className=" md:text-xl text-xl p-5 mt-3 text-gray-500">
           Monitor your data analytics to increase revenue for BTB, BTC & SASS
           platforms.
         </p>
