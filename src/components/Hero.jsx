@@ -1,9 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
-    <div className=" bg-gray-200 dark:bg-gray-900">
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className=" bg-gray-200 dark:bg-gray-900"
+    >
       <div className=" max-w-[800] mt-[50px] h-screen mx-auto text-center flex flex-col justify-center">
         <p className=" uppercase text-orange-600 font-bold p-2">
           Growing with Data analytics
@@ -34,7 +40,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
